@@ -86,7 +86,7 @@ public class RedisDLock implements DLock {
     public boolean tryLock() {
 
         long expiredTime = System.currentTimeMillis() + lockedTime;
-        if (jedis.setnx( lockName, String.valueOf( expiredTime ) ) == 1) {
+        if (jedis.setnx( lockName, String.valueOf( expiredTime ) ) == 0) {
             return true;
         }
 
