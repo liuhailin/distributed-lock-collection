@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.lhl</groupId>
+    <groupId>com.dlock</groupId>
     <artifactId>distributed-lock-collection</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
@@ -13,6 +13,10 @@
         <module>memcached-d-lock</module>
         <module>zookeeper-d-lock</module>
         <module>zookeeper-d-lock-curator</module>
+        <module>common-core-d-lock</module>
+        <module>d-lock-spring-boot-starter/d-lock-spring-boot-starter</module>
+        <module>d-lock-spring-boot-starter/d-lock-spring-boot-autoconfigure</module>
+        <module>examples</module>
     </modules>
 
 
